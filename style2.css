@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    padding:0;
+    background: url("img/backgr.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+
+}
+
+.cutie{
+    width:100%;
+    padding:30px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+
+}
+
+.cutie h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.cutie input[type="text"],.cutie input[type="password"],.cutie input[type="email"]{
+    background: none;
+    display: block;
+    margin:2vh auto;
+    text-align: center;
+    border:2px solid black;
+    padding: 1.5vh 1vw;
+    width:15vw;
+    border-radius:2vw;
+    outline:none;
+    transition: 0.25s linear;
+}
+.cutie input[type="text"]:focus,.cutie input[type="password"]:focus,.cutie input[type="email"]:focus {
+    width: 18vw;
+    border-color: green;
+}
+
+.cutie input[type="submit"]{
+    width:3.5vw;
+    background: rgba(173,255,47,0.5);
+    display: block;
+    margin: 2vw auto;
+    text-align: center;
+    border:2px solid greenyellow;
+    padding: 1vw 1vh;
+    outline:none;
+    border-radius:20px;
+    transition: 0.25s linear;
+    cursor:pointer;
+}
+.cutie input[type="submit"]:hover{
+    background: greenyellow;
+    border:2px solid black;
+}
+
+::placeholder{
+    color:black;
+}
+
+input + p{
+    opacity:0;
+    height: 0;
+}
+input.invalid + p{
+    opacity: 1;
+    height: auto;
+}
